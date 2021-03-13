@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: rahulgakstest 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rahulgakstest
+  template:
+    metadata:
+      labels:
+        app: rahulgakstest 
+    spec:
+      containers:
+        - name: rahulgakstest 
+          image: partsacr.azurecr.io/rahulgakstest
+          ports:
+          - containerPort: 3552
