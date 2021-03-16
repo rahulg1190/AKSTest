@@ -19,7 +19,7 @@ variables:
   imagePullSecret: 'partsacrbe81-auth'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'windows-latest'
 
 
 stages:
